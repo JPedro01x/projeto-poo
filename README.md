@@ -23,6 +23,16 @@ Este projeto é uma aplicação Java Maven com CRUD completo para duas entidades
 - `sql/init.sql` - script para criar banco e tabelas
 - `.env.example` - exemplo de arquivo de ambiente
 
+
+## API externa
+
+A API usada é o ViaCEP:
+
+https://viacep.com.br/ws/{cep}/json/
+
+Ela é consumida na classe ViaCepService e usada no cadastro/atualização de endereços e na opção de consulta de CEP do menu principal.
+
+
 ## Configuração
 
 1. Crie o banco de dados MySQL, por exemplo `crud_db`.
